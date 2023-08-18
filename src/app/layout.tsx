@@ -23,7 +23,7 @@ export default function RootLayout({
         inter.className
       )}
     >
-      <body className="m-h-screen pt-12 bg-slate-50 antialiased">
+      <body className="max-h-screen pt-12 bg-slate-50 antialiased">
         <Navbar />
         <main className="container max-w-7xl mx-auto h-full pt-12">
           {children}
