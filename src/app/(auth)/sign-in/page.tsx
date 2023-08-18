@@ -10,7 +10,7 @@ const Page = () => {
           href="/"
           className={cn(
             buttonVariants({ variant: 'ghost' }),
-            'self-start -mt-20'
+            'self-start -mt-10'
           )}
         >
           Home
