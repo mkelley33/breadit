@@ -1,3 +1,4 @@
+import Signin from '@/components/Signin';
 import { buttonVariants } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -15,6 +16,7 @@ const Page = () => {
         >
           Home
         </Link>
+        <Signin />
       </div>
     </div>
   );
