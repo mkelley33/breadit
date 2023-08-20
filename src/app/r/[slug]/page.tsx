@@ -35,6 +35,7 @@ const page = async ({ params }: PageProps) => {
       <h1 className="font-bold text-3xl md:text-4xl h14">r/{subreddit.name}</h1>
       <ul>
         <MiniCreatePost session={session} />
+        {/* TODO: Show posts in user feed */}
       </ul>
     </>
   );
