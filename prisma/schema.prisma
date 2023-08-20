@@ -72,8 +72,6 @@ model Subreddit {
   userId      String?
 
   @@index([name])
-  @@index([creatorId])
-  @@index([userId])
 }
 
 model Subscription {
