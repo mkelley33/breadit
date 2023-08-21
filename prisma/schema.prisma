@@ -110,7 +110,7 @@ model Comment {
   authorId  String
   post      Post          @relation(fields: [postId], references: [id])
   postId    String
-  replyToId String
+  replyToId String?
   replyTo   Comment?      @relation("ReplyTo", fields: [replyToId], references: [id], onDelete: NoAction, onUpdate: NoAction)
   replies   Comment[]     @relation("ReplyTo")
   votes     CommentVote[]
