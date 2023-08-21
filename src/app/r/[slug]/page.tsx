@@ -27,6 +27,9 @@ const page = async ({ params }: PageProps) => {
         take: INFINITE_SCROLLING_PAGINATION_RESULTS,
       },
     },
+    orderBy: {
+      createdAt: 'desc',
+    },
   });
 
   if (!subreddit) return notFound();
