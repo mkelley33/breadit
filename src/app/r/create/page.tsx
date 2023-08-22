@@ -33,21 +33,15 @@ const Page = () => {
             variant: 'destructive',
           });
         }
-
-        if (err instanceof AxiosError) {
-          if (err.response?.status === 422) {
-            return toast({
-              title: 'Invalid subreddit name.',
-              description: 'Please choose a name between 3 and 21 characters.',
-              variant: 'destructive',
-            });
-          }
+        if (err.response?.status === 422) {
+          return toast({
+            title: 'Invalid subreddit name.',
+            description: 'Please choose a name between 3 and 21 characters.',
+            variant: 'destructive',
+          });
         }
-
-        if (err instanceof AxiosError) {
-          if (err.response?.status === 401) {
-            return loginToast();
-          }
+        if (err.response?.status === 401) {
+          return loginToast();
         }
       }
 
