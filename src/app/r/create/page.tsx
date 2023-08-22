@@ -83,7 +83,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-end gap-4">
-          <Button variant="subtle" onClick={(e) => router.back()}>
+          <Button variant="subtle" onClick={() => router.back()}>
             Cancel
           </Button>
           <Button
